@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{font-family: 'Outfit'}
+
+@layer base {
+    html{
+        scroll-behavior: smooth;
+    }
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.rich-text {
+  width: 100%;
+  max-width: 100%;
+  font-family: 'Inter', sans-serif;
+  color: #1F2937;
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: justify;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 24px;
+}
+
+.rich-text h2,
+.rich-text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.rich-text p {
+  margin-bottom: 20px;
+  color: #4B5563;
+}
+
+.rich-text ul,
+.rich-text ol {
+  padding-left: 1.25rem;
+  margin-bottom: 20px;
+  color: #374151;
+}
+
+.rich-text ul {
+  list-style-type: disc;
+}
+
+.rich-text ol {
+  list-style-type: decimal;
+}
+
+.rich-text li {
+  margin-bottom: 10px;
+}
+
+.rich-text .apply-btn,
+.rich-text button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #2563EB;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.rich-text .apply-btn:hover,
+.rich-text button:hover {
+  background-color: #1D4ED8;
+}
